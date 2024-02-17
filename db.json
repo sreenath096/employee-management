@@ -2,37 +2,37 @@
   "departments": [
     {
       "id": "1",
-      "title": "HR"
+      "name": "HR"
     },
     {
       "id": "2",
-      "title": "Sales"
+      "name": "Sales"
     },
     {
       "id": "3",
-      "title": "Finance"
+      "name": "Finance"
     },
     {
       "id": "4",
-      "title": "Marketing"
+      "name": "Marketing"
     }
   ],
   "employeementTypes": [
     {
       "id": "1",
-      "title": "Full Time"
+      "type": "Full Time"
     },
     {
       "id": "2",
-      "title": "Part Time"
+      "type": "Part Time"
     },
     {
       "id": "3",
-      "title": "Contract"
+      "type": "Contract"
     },
     {
       "id": "4",
-      "title": "FreeLancer"
+      "type": "FreeLancer"
     }
   ],
   "employees": [

@@ -1,1 +1,15 @@
-<p>dep-list works!</p>
+<table class="table table-hover table-lg">
+    <thead>
+        <tr>
+            <th scope="col">Department Name</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let dept of departments">
+            <td>{{ dept.name }}</td>
+            <td>
+            </td>
+        </tr>
+    </tbody>
+</table>

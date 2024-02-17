@@ -10,6 +10,8 @@ import { EmpCreateComponent } from './employee/emp-create/emp-create.component';
 import { DepListComponent } from './department/dep-list/dep-list.component';
 import { DepCreateComponent } from './department/dep-create/dep-create.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
 
 
 @NgModule({
@@ -25,7 +27,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
