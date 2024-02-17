@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Department } from '../models/department.model';
 import { Observable } from 'rxjs';
@@ -14,5 +14,13 @@ export class DepartmentService {
 
   getDepartments(): Observable<Department[]> {
     return this.httpClient.get<Department[]>(this.baseUrl);
+  }
+
+  addDepartment(department: Department): Observable<Department> {
+    return this.httpClient.post<Department>(this.baseUrl, department, {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json'
+      })
+    });
   }
 }

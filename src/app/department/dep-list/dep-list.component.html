@@ -1,15 +1,27 @@
-<table class="table table-hover table-lg">
-    <thead>
-        <tr>
-            <th scope="col">Department Name</th>
-            <th scope="col">Action</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let dept of departments">
-            <td>{{ dept.name }}</td>
-            <td>
-            </td>
-        </tr>
-    </tbody>
-</table>
+<div class="container p-4">
+    <div class="row pb-2">
+        <div class="col">
+            <h1 class="text-primary">Department List</h1>
+        </div>
+        <div class="col text-end pt-1">
+            <a class="btn btn-outline-primary" routerLink="/department/create">Create Department</a>
+        </div>
+    </div>
+    <table class="table table-lg">
+        <thead>
+            <tr>
+                <th scope="col">Department Name</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let dept of departments">
+                <td>{{ dept.name }}</td>
+                <td>
+                    <a class="btn btn-success" routerLink="/department/edit">Edit</a> |
+                    <a class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
