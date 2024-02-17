@@ -1,0 +1,92 @@
+{
+  "departments": [
+    {
+      "id": "1",
+      "title": "HR"
+    },
+    {
+      "id": "2",
+      "title": "Sales"
+    },
+    {
+      "id": "3",
+      "title": "Finance"
+    },
+    {
+      "id": "4",
+      "title": "Marketing"
+    }
+  ],
+  "employeementTypes": [
+    {
+      "id": "1",
+      "title": "Full Time"
+    },
+    {
+      "id": "2",
+      "title": "Part Time"
+    },
+    {
+      "id": "3",
+      "title": "Contract"
+    },
+    {
+      "id": "4",
+      "title": "FreeLancer"
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "firstName": "Sreenath",
+      "lastName": "Angamuthu",
+      "gender": "Male",
+      "email": "sreenath@syne.com",
+      "phoneNumber": 7708208801,
+      "dateOfBirth": "1979/11/20",
+      "dateOfJoining": "2021/11/20",
+      "department": "2",
+      "salary": 15000,
+      "employeementType": "1"
+    },
+    {
+      "id": 2,
+      "firstName": "Sreenath",
+      "lastName": "Angamuthu",
+      "gender": "Male",
+      "email": "sreenath@syne.com",
+      "phoneNumber": 7708208801,
+      "dateOfBirth": "1979/11/20",
+      "dateOfJoining": "2021/11/20",
+      "department": "2",
+      "salary": 15000,
+      "employeementType": "1"
+    },
+    {
+      "id": 3,
+      "firstName": "Sreenath",
+      "lastName": "Angamuthu",
+      "gender": "Male",
+      "email": "sreenath@syne.com",
+      "phoneNumber": 7708208801,
+      "dateOfBirth": "1979/11/20",
+      "dateOfJoining": "2021/11/20",
+      "department": "2",
+      "salary": 15000,
+      "employeementType": "1"
+    },
+    {
+      "id": 4,
+      "firstName": "Sreenath",
+      "lastName": "Angamuthu",
+      "gender": "Male",
+      "email": "sreenath@syne.com",
+      "phoneNumber": 7708208801,
+      "dateOfBirth": "1979/11/20",
+      "dateOfJoining": "2021/11/20",
+      "department": "2",
+      "salary": 15000,
+      "employeementType": "1"
+    }
+  ]
+}
