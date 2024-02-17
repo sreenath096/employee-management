@@ -9,6 +9,7 @@ import { EmpListComponent } from './employee/emp-list/emp-list.component';
 import { EmpCreateComponent } from './employee/emp-create/emp-create.component';
 import { DepListComponent } from './department/dep-list/dep-list.component';
 import { DepCreateComponent } from './department/dep-create/dep-create.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { DepCreateComponent } from './department/dep-create/dep-create.component
     EmpListComponent,
     EmpCreateComponent,
     DepListComponent,
-    DepCreateComponent
+    DepCreateComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
