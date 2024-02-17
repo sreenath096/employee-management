@@ -11,9 +11,10 @@ import { DepListComponent } from './department/dep-list/dep-list.component';
 import { DepCreateComponent } from './department/dep-create/dep-create.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HttpClientModule } from '@angular/common/http';
-import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { DepEditComponent } from './department/dep-edit/dep-edit.component';
+import { DeleteConfirmationComponent } from './delete-confirmation/delete-confirmation.component';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 
 @NgModule({
@@ -26,13 +27,15 @@ import { DepEditComponent } from './department/dep-edit/dep-edit.component';
     DepListComponent,
     DepCreateComponent,
     NotFoundComponent,
-    DepEditComponent
+    DepEditComponent,
+    DeleteConfirmationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ModalModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
