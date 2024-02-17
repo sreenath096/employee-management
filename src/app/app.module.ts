@@ -7,14 +7,11 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { HomeComponent } from './home/home.component';
 import { EmpListComponent } from './employee/emp-list/emp-list.component';
 import { EmpCreateComponent } from './employee/emp-create/emp-create.component';
-import { DepListComponent } from './department/dep-list/dep-list.component';
-import { DepCreateComponent } from './department/dep-create/dep-create.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
-import { DepEditComponent } from './department/dep-edit/dep-edit.component';
 import { DeleteConfirmationComponent } from './delete-confirmation/delete-confirmation.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { DepartmentModule } from './department/department.module';
 
 
 @NgModule({
@@ -24,17 +21,14 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     NavBarComponent,
     EmpListComponent,
     EmpCreateComponent,
-    DepListComponent,
-    DepCreateComponent,
     NotFoundComponent,
-    DepEditComponent,
     DeleteConfirmationComponent
   ],
   imports: [
     BrowserModule,
+    DepartmentModule,
     AppRoutingModule,
-    HttpClientModule,
-    FormsModule,
+    HttpClientModule,    
     ModalModule.forRoot()
   ],
   providers: [],
