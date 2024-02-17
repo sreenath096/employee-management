@@ -18,8 +18,8 @@
             <tr *ngFor="let dept of departments">
                 <td>{{ dept.name }}</td>
                 <td>
-                    <a class="btn btn-success" routerLink="/department/edit">Edit</a> |
-                    <a class="btn btn-danger">Delete</a>
+                    <a class="btn btn-success" [routerLink]="['/department/edit', dept.id]">Edit</a> |
+                    <a class="btn btn-danger" [routerLink]="['/department/delete', dept.id]">Delete</a>
                 </td>
             </tr>
         </tbody>

@@ -16,8 +16,20 @@ export class DepartmentService {
     return this.httpClient.get<Department[]>(this.baseUrl);
   }
 
+  getDepartment(id: number): Observable<Department> {
+    return this.httpClient.get<Department>(`${this.baseUrl}/${id}`);
+  }
+
   addDepartment(department: Department): Observable<Department> {
     return this.httpClient.post<Department>(this.baseUrl, department, {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json'
+      })
+    });
+  }
+
+  updateDepartment(department: Department): Observable<void> {
+    return this.httpClient.put<void>(`${this.baseUrl}/${department.id}`, department, {
       headers: new HttpHeaders({
         'Content-Type': 'application/json'
       })

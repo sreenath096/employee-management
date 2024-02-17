@@ -13,7 +13,8 @@ export class DepCreateComponent implements OnInit {
   @ViewChild('departmentForm') departmentForm: NgForm | undefined;
   department: Department = { id: 0, name: '' };
 
-  constructor(private router: Router, private departmentService: DepartmentService) { }
+  constructor(private router: Router,
+    private departmentService: DepartmentService) { }
 
   ngOnInit(): void {
     this.departmentService.getDepartments().subscribe((response: Department[]) => {

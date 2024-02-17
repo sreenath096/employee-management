@@ -13,6 +13,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { DepEditComponent } from './department/dep-edit/dep-edit.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { FormsModule } from '@angular/forms';
     EmpCreateComponent,
     DepListComponent,
     DepCreateComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    DepEditComponent
   ],
   imports: [
     BrowserModule,
