@@ -1,1 +1,130 @@
-<p>emp-create works!</p>
+<form #employeeForm="ngForm" (ngSubmit)="onFormSubmit()">
+    <div class="container p-3">
+        <h3 class="text-primary">Create Employee</h3>
+        <div class="row">
+            <div class="col-2">
+                <label for="firstName" class="form-label pt-2">First Name</label>
+            </div>
+            <div class="col-10 pb-2">
+                <input type="text" class="form-control" id="firstName" name="firstName" [(ngModel)]="employee.firstName"
+                    required #firstName="ngModel" />
+                <span class="text-danger help-text" *ngIf="firstName.invalid && firstName.touched">
+                    First Name is Required
+                </span>
+            </div>
+            <div class="col-2">
+                <label for="lastName" class="form-label pt-2">Last Name</label>
+            </div>
+            <div class="col-10 pb-2">
+                <input type="text" class="form-control" id="lastName" name="lastName" [(ngModel)]="employee.lastName"
+                    required #lastName="ngModel" />
+                <span class="text-danger help-text" *ngIf="lastName.invalid && lastName.touched">
+                    Last Name is Required
+                </span>
+            </div>
+            <div class="col-2">
+                <label for="gender" class="form-label">Gender</label>
+            </div>
+            <div class="col-10 pb-2">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" required name="gender" id="inlineRadio1" value="Male"
+                        [(ngModel)]="employee.gender" #gender="ngModel">
+                    <label class="form-check-label" for="inlineRadio1">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" required name="gender" id="inlineRadio2" value="Female"
+                        [(ngModel)]="employee.gender" #gender="ngModel">
+                    <label class="form-check-label" for="inlineRadio2">Female</label>
+                </div>
+                <span class="text-danger help-text" *ngIf="gender.invalid && gender.touched">
+                    Gender is Required
+                </span>
+            </div>
+            <div class="col-2">
+                <label for="email" class="form-label pt-2">Email</label>
+            </div>
+            <div class="col-10 pb-2">
+                <input type="text" class="form-control" id="email" name="email" [(ngModel)]="employee.email" required
+                    email #email="ngModel" />
+                <span class="text-danger help-text" *ngIf="email.invalid && email.touched">
+                    Email is Required
+                </span>
+            </div>
+            <div class="col-2">
+                <label for="phoneNumber" class="form-label pt-2">Phone Number</label>
+            </div>
+            <div class="col-10 pb-2">
+                <input type="text" class="form-control" id="phoneNumber" name="phoneNumber"
+                    [(ngModel)]="employee.phoneNumber" required #phoneNumber="ngModel" />
+                <span class="text-danger help-text" *ngIf="phoneNumber.invalid && phoneNumber.touched">
+                    Phone Number is Required
+                </span>
+            </div>
+            <div class="col-2">
+                <label for="dateOfBirth" class="form-label pt-2">Date of Birth</label>
+            </div>
+            <div class="col-10 pb-2">
+                <input type="date" class="form-control" id="dateOfBirth" name="dateOfBirth"
+                    [(ngModel)]="employee.dateOfBirth" required #dateOfBirth="ngModel">
+                <span class="text-danger help-text" *ngIf="dateOfBirth.invalid && dateOfBirth.touched">
+                    Date of Birth is Required
+                </span>
+            </div>
+            <div class="col-2">
+                <label for="dateOfJoining" class="form-label pt-2">Date of Joining</label>
+            </div>
+            <div class="col-10 pb-2">
+                <input type="date" class="form-control" id="dateOfJoining" name="dateOfJoining"
+                    [(ngModel)]="employee.dateOfJoining" required #dateOfJoining="ngModel">
+                <span class="text-danger help-text" *ngIf="dateOfJoining.invalid && dateOfJoining.touched">
+                    Date of Joining is Required
+                </span>
+            </div>
+            <div class="col-2">
+                <label for="department" class="form-label pt-2">Department</label>
+            </div>
+            <div class="col-10 pb-2">
+                <select class="form-select" id="department" name="department" [(ngModel)]="employee.department" required
+                    #department="ngModel">
+                    <option selected>Open this select menu</option>
+                    <option [value]="department.id" *ngFor="let department of departments">{{department.name}}</option>
+                </select>
+                <span class="text-danger help-text" *ngIf="department.invalid && department.touched">
+                    Department is Required
+                </span>
+            </div>
+            <div class="col-2">
+                <label for="salary" class="form-label pt-2">Salary</label>
+            </div>
+            <div class="col-10 pb-2">
+                <input type="text" class="form-control" id="salary" name="salary" [(ngModel)]="employee.salary" required
+                    #salary="ngModel" />
+                <span class="text-danger help-text" *ngIf="salary.invalid && salary.touched">
+                    Salary is Required
+                </span>
+            </div>
+            <div class="col-2">
+                <label for="employmentType" class="form-label pt-2">Employment Type</label>
+            </div>
+            <div class="col-10 pb-2">
+                <select class="form-select" id="employmentType" name="employmentType"
+                    [(ngModel)]="employee.employmentType" required #employmentType="ngModel">
+                    <option selected>Open this select menu</option>
+                    <option [value]="employmentType.id" *ngFor="let employmentType of employmentTypes">
+                        {{employmentType.type}}</option>
+                </select>
+                <span class="text-danger help-text" *ngIf="employmentType.invalid && employmentType.touched">
+                    Employeement Type is Required
+                </span>
+            </div>
+            <div class="col-5 offset-2">
+                <a class="btn btn-primary form-control" (click)="onBackToEmployeeListClick()">Back to Employee
+                    List</a>
+            </div>
+            <div class="col-5">
+                <button type="submit" class="btn btn-success form-control" [disabled]="!employeeForm.valid">Create
+                    Employee</button>
+            </div>
+        </div>
+    </div>
+</form>

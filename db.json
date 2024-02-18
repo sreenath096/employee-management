@@ -99,6 +99,19 @@
       "department": "2",
       "salary": 15000,
       "employmentType": "1"
+    },
+    {
+      "id": 5,
+      "firstName": "Sreenath",
+      "lastName": "Angamuthu",
+      "gender": "Male",
+      "email": "sreenath096@gmail.com",
+      "phoneNumber": "7708208801",
+      "dateOfBirth": "2024-02-01",
+      "dateOfJoining": "2024-02-03",
+      "department": "7",
+      "salary": "1000",
+      "employmentType": "1"
     }
   ]
 }

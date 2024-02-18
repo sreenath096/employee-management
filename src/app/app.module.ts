@@ -11,6 +11,8 @@ import { DeleteConfirmationComponent } from './delete-confirmation/delete-confir
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { DepartmentModule } from './department/department.module';
 import { EmployeeModule } from './employee/employee.module';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -23,11 +25,13 @@ import { EmployeeModule } from './employee/employee.module';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     DepartmentModule,
     EmployeeModule,
     AppRoutingModule,
     HttpClientModule,
-    ModalModule.forRoot()
+    ModalModule.forRoot(),
+    BsDatepickerModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
