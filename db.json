@@ -1,6 +1,26 @@
 {
   "departments": [
     {
+      "id": 1,
+      "name": "IT"
+    },
+    {
+      "id": 2,
+      "name": "IT"
+    },
+    {
+      "id": 3,
+      "name": "IT"
+    },
+    {
+      "id": 4,
+      "name": "IT"
+    },
+    {
+      "id": 5,
+      "name": "IT"
+    },
+    {
       "id": 6,
       "name": "IT"
     },
@@ -9,7 +29,7 @@
       "name": "R&D"
     }
   ],
-  "employeementTypes": [
+  "employmentTypes": [
     {
       "id": "1",
       "type": "Full Time"
@@ -39,7 +59,7 @@
       "dateOfJoining": "2021/11/20",
       "department": "2",
       "salary": 15000,
-      "employeementType": "1"
+      "employmentType": "1"
     },
     {
       "id": "2",
@@ -52,7 +72,7 @@
       "dateOfJoining": "2021/11/20",
       "department": "2",
       "salary": 15000,
-      "employeementType": "1"
+      "employmentType": "1"
     },
     {
       "id": "3",
@@ -65,7 +85,7 @@
       "dateOfJoining": "2021/11/20",
       "department": "2",
       "salary": 15000,
-      "employeementType": "1"
+      "employmentType": "1"
     },
     {
       "id": "4",
@@ -78,7 +98,7 @@
       "dateOfJoining": "2021/11/20",
       "department": "2",
       "salary": 15000,
-      "employeementType": "1"
+      "employmentType": "1"
     }
   ]
 }

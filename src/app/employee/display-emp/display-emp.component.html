@@ -1,0 +1,22 @@
+<div class="card mb-3" style="max-width: 600px;">
+    <div class="row g-0">
+        <div class="col-md-4">
+            <img src="https://placehold.co/400x400" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+            <div class="card-header">
+                <b>Employee Name :</b> {{ employee?.firstName + " " + employee?.lastName}}
+            </div>
+            <div class="card-body">
+                <p class="card-text"><b>Department :</b> {{ employee?.department }}</p>
+                <p class="card-text"><b>Employment Type : </b>{{ employee?.employmentType }}</p>
+                <div class="card-text">
+                    <button class="btn btn-primary" [routerLink]="['/employee/view', employee?.id]">View</button> |
+                    <button class="btn btn-success" [routerLink]="['/employee/edit', employee?.id]">Edit</button> |
+                    <button class="btn btn-danger">Delete</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

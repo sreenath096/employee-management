@@ -9,5 +9,5 @@ export interface Employee {
     dateOfJoining: Date;
     department: string;
     salary: number;
-    employeementType: string;
+    employmentType: string;
 }
